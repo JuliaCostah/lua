@@ -1,0 +1,46 @@
+
+*{ 
+    -webkit-tap-highlight-color: transparent !important; 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important; 
+    -webkit-focus-ring-color: transparent !important; 
+    outline: none !important; 
+}
+body{
+    background: url(/image/fundo-ceu.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centro{
+    mix-blend-mode: screen;
+    width: fit-content;
+    border-radius: 50%;
+    cursor: default;
+    -webtip-tap-highlight-color: transparent;
+    outline: none;
+}
+.centro .mensagem {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(224, 135, 215);
+    font-size: 21px;
+    flex-direction: column;
+    margin-bottom: 10px;
+    cursor: default;
+    text-align: center;
+}
+#lua{
+    max-width: 70vw;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 600px;
+    object-fit: contain;
+    transition: filter 1.0s ease;
+
+    /* remove o quadrado azul ao tocar no celular*/
+    -webkit-touch-callout: none;
+    user-select: none;
+}
